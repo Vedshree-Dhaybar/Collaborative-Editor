@@ -1,0 +1,75 @@
+/* src/components/Editor.css */
+
+/* General page layout */
+.editor-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Title styling */
+  .editor-container h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  /* Editor container */
+  .editor-container {
+    width: 100%;
+    max-width: 800px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Quill editor styling */
+  .quill-editor {
+    height: 400px;
+    overflow-y: auto;
+  }
+  
+  .ql-toolbar {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .ql-container {
+    border: none;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  /* Share button styling */
+  .share-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1em;
+  }
+  
+  .share-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 600px) {
+    .editor-container {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .editor-page {
+      padding: 10px;
+    }
+  }
+  
